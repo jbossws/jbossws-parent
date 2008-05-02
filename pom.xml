@@ -141,7 +141,7 @@
     <repository>
       <id>repository.jboss.org</id>
       <name>JBoss Maven Repository</name>
-      <url>file://${jboss.maven.repository.root}</url>
+      <url>file://${jboss.maven.repository}</url>
     </repository>
     <snapshotRepository>
       <id>snapshots.jboss.org</id>
