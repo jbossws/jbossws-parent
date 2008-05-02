@@ -69,6 +69,16 @@
         </configuration>
       </plugin>
     </plugins>
+    
+    <!-- PluginManagement -->
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>2.0.2.SP1</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
   </build>
   
   <!-- Reporting -->
@@ -107,6 +117,24 @@
       </snapshots>
     </repository>
   </repositories>
+  
+  <!-- PluginRepositories -->
+  <pluginRepositories>
+    <pluginRepository>
+      <id>repository.jboss.org</id>
+      <url>http://repository.jboss.org/maven2</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </pluginRepository>
+    <pluginRepository>
+      <id>snapshots.jboss.org</id>
+      <url>http://snapshots.jboss.org/maven2</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
   
   <!-- DistributionManagement -->
   <distributionManagement>
