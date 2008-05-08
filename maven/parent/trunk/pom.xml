@@ -77,6 +77,11 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>2.0.2.SP1</version>
         </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>build-helper-maven-plugin</artifactId>
+          <version>1.1</version>
+        </plugin>
       </plugins>
     </pluginManagement>
   </build>
