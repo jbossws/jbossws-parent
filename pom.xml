@@ -40,7 +40,7 @@
       <url>http://repository.jboss.com/licenses/lgpl.txt</url>
     </license>
   </licenses>
-  
+
   <!-- Plugins -->
   <build>
     <plugins>
@@ -76,7 +76,7 @@
         </configuration>
       </plugin>
     </plugins>
-    
+
     <!-- PluginManagement -->
     <pluginManagement>
       <plugins>
@@ -93,6 +93,11 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>buildnumber-maven-plugin</artifactId>
           <version>1.0-beta-1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>2.0</version>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -178,9 +183,7 @@
       <build>
         <plugins>
           <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-dependency-plugin</artifactId>
-            <version>2.0</version>
             <executions>
               <execution>
                 <id>download-sources</id>
