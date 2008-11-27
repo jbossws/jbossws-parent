@@ -177,7 +177,7 @@
       <id>download-sources</id>
       <activation>
         <property>
-          <name>!skip-download-sources</name>
+          <name>jbossws-download-sources</name>
         </property>
       </activation>
       <build>
