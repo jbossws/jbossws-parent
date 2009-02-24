@@ -7,7 +7,7 @@
   <artifactId>jbossws-parent</artifactId>
   <packaging>pom</packaging>
   
-  <version>1.0.2-SNAPSHOT</version>
+  <version>1.0.3-SNAPSHOT</version>
   
   <organization>
     <name>JBoss, a division of Red Hat</name>
