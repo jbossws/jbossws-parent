@@ -1,38 +1,34 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  
+
   <name>JBoss Web Services</name>
   <groupId>org.jboss.ws</groupId>
   <artifactId>jbossws-parent</artifactId>
   <packaging>pom</packaging>
-  
+
   <version>1.0.4-SNAPSHOT</version>
-  
+
   <organization>
     <name>JBoss, a division of Red Hat</name>
     <url>http://www.jboss.org</url>
   </organization>
-  
+
   <url>http://www.jboss.org/jbossws</url>
-  
+
   <!-- Source Control Management -->
   <scm>
     <connection>scm:svn:http://anonsvn.jboss.org/repos/jbossws/maven/parent/trunk</connection>
     <developerConnection>scm:svn:https://svn.jboss.org/repos/jbossws/maven/parent/trunk</developerConnection>
     <url>http://fisheye.jboss.com/viewrep/JBossWS/maven/parent/trunk</url>
   </scm>
-  
-  <prerequisites>
-    <maven>2.0.9</maven>
-  </prerequisites>
-  
+
   <!-- IssueManagement -->
   <issueManagement>
     <system>jira</system>
     <url>http://jira.jboss.org/jira/browse/JBWS</url>
   </issueManagement>
-  
+
   <!-- licenses -->
   <licenses>
     <license>
@@ -47,8 +43,8 @@
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.5</source>
-          <target>1.5</target>
+          <source>1.6</source>
+          <target>1.6</target>
           <showDeprecation>true</showDeprecation>
           <showWarnings>true</showWarnings>
           <optimize>true</optimize>
@@ -102,7 +98,7 @@
       </plugins>
     </pluginManagement>
   </build>
-  
+
   <!-- Reporting -->
   <reporting>
     <plugins>
@@ -111,7 +107,7 @@
       </plugin>
     </plugins>
   </reporting>
-  
+
   <!-- Repositories -->
   <repositories>
     <repository>
@@ -129,7 +125,7 @@
       </snapshots>
     </repository>
   </repositories>
-  
+
   <!-- PluginRepositories -->
   <pluginRepositories>
     <pluginRepository>
@@ -147,7 +143,7 @@
       </snapshots>
     </pluginRepository>
   </pluginRepositories>
-  
+
   <!-- DistributionManagement -->
   <distributionManagement>
     <repository>
@@ -189,6 +185,42 @@
         </plugins>
       </build>
     </profile>
+    <profile>
+      <id>enforce</id>
+      <activation>
+        <property>
+          <name>!skip-enforce</name>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-enforcer-plugin</artifactId>
+            <version>1.0-beta-1</version>
+            <executions>
+              <execution>
+                <id>enforce-java-maven-versions</id>
+                <goals>
+                  <goal>enforce</goal>
+                </goals>
+                <configuration>
+                  <rules>
+                    <requireMavenVersion>
+                      <version>2.0.9</version>
+                    </requireMavenVersion>
+                    <requireJavaVersion>
+                      <version>1.6</version>
+                    </requireJavaVersion>
+                  </rules>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+
   </profiles>
 
 </project>
