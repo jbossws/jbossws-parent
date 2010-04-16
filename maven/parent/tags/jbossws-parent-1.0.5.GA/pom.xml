@@ -7,7 +7,7 @@
   <artifactId>jbossws-parent</artifactId>
   <packaging>pom</packaging>
 
-  <version>1.0.5-SNAPSHOT</version>
+  <version>1.0.5.GA</version>
 
   <organization>
     <name>JBoss, a division of Red Hat</name>
@@ -18,9 +18,9 @@
 
   <!-- Source Control Management -->
   <scm>
-    <connection>scm:svn:http://anonsvn.jboss.org/repos/jbossws/maven/parent/trunk</connection>
-    <developerConnection>scm:svn:https://svn.jboss.org/repos/jbossws/maven/parent/trunk</developerConnection>
-    <url>http://fisheye.jboss.com/viewrep/JBossWS/maven/parent/trunk</url>
+    <connection>scm:svn:http://anonsvn.jboss.org/repos/jbossws/maven/parent/tags/jbossws-parent-1.0.5.GA</connection>
+    <developerConnection>scm:svn:https://svn.jboss.org/repos/jbossws/maven/parent/tags/jbossws-parent-1.0.5.GA</developerConnection>
+    <url>http://fisheye.jboss.com/viewrep/JBossWS/maven/parent/tags/jbossws-parent-1.0.5.GA</url>
   </scm>
 
   <properties>
