@@ -23,6 +23,10 @@
     <url>http://fisheye.jboss.com/viewrep/JBossWS/maven/parent/trunk</url>
   </scm>
 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
   <!-- IssueManagement -->
   <issueManagement>
     <system>jira</system>
