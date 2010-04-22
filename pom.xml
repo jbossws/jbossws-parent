@@ -90,6 +90,10 @@
     <pluginManagement>
       <plugins>
         <plugin>
+          <artifactId>maven-help-plugin</artifactId>
+          <version>2.1.1</version>
+        </plugin>
+        <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>2.0.2.SP1</version>
         </plugin>
