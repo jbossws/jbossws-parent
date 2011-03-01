@@ -8,7 +8,7 @@
   <packaging>pom</packaging>
   <description>Maven parent for JBossWS artifacts</description>
 
-  <version>1.0.10.Alpha1</version>
+  <version>1.0.10-SNAPSHOT</version>
 
   <organization>
     <name>JBoss, by Red Hat</name>
@@ -19,9 +19,9 @@
 
   <!-- Source Control Management -->
   <scm>
-    <connection>scm:svn:http://anonsvn.jboss.org/repos/jbossws/maven/parent/tags/jbossws-parent-1.0.10.Alpha1</connection>
-    <developerConnection>scm:svn:https://svn.jboss.org/repos/jbossws/maven/parent/tags/jbossws-parent-1.0.10.Alpha1</developerConnection>
-    <url>http://fisheye.jboss.com/viewrep/JBossWS/maven/parent/tags/jbossws-parent-1.0.10.Alpha1</url>
+    <connection>scm:svn:http://anonsvn.jboss.org/repos/jbossws/maven/parent/trunk</connection>
+    <developerConnection>scm:svn:https://svn.jboss.org/repos/jbossws/maven/parent/trunk</developerConnection>
+    <url>http://fisheye.jboss.com/viewrep/JBossWS/maven/parent/trunk</url>
   </scm>
 
   <developers>
