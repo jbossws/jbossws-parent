@@ -8,7 +8,7 @@
   <packaging>pom</packaging>
   <description>Maven parent for JBossWS artifacts</description>
 
-  <version>1.1.1-SNAPSHOT</version>
+  <version>1.2.0-SNAPSHOT</version>
 
   <organization>
     <name>JBoss, by Red Hat</name>
@@ -242,10 +242,10 @@
                 <configuration>
                   <rules>
                     <requireMavenVersion>
-                      <version>2.2.1</version>
+                      <version>[3.2.2,)</version>
                     </requireMavenVersion>
                     <requireJavaVersion>
-                      <version>1.6</version>
+                      <version>1.7</version>
                     </requireJavaVersion>
                   </rules>
                 </configuration>
