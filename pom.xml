@@ -19,9 +19,9 @@
 
   <!-- Source Control Management -->
   <scm>
-    <connection>scm:svn:http://anonsvn.jboss.org/repos/jbossws/maven/parent/trunk</connection>
-    <developerConnection>scm:svn:https://svn.jboss.org/repos/jbossws/maven/parent/trunk</developerConnection>
-    <url>http://fisheye.jboss.com/viewrep/JBossWS/maven/parent/trunk</url>
+    <connection>scm:git:https://github.com/jbossws/jbossws-parent.git</connection>
+    <developerConnection>scm:git:https://github.com/jbossws/jbossws-parent.git</developerConnection>
+    <url>https://github.com/jbossws/jbossws-parent</url>
   </scm>
 
   <developers>
