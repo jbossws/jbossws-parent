@@ -8,7 +8,7 @@
   <packaging>pom</packaging>
   <description>Maven parent for JBossWS artifacts</description>
 
-  <version>1.3.0-SNAPSHOT</version>
+  <version>1.3.0.Beta1</version>
 
   <organization>
     <name>JBoss, by Red Hat</name>
