@@ -152,7 +152,6 @@
         <artifactId>maven-release-plugin</artifactId>
         <configuration>
           <arguments>-DskipTests</arguments>
-          <scmCommentPrefix>[${jira.issue}] :</scmCommentPrefix>
           <autoVersionSubmodules>true</autoVersionSubmodules>
         </configuration>
       </plugin>
