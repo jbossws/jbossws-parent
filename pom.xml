@@ -11,10 +11,10 @@
 
   <organization>
     <name>JBoss, by Red Hat</name>
-    <url>http://www.jboss.org</url>
+    <url>https://www.jboss.org</url>
   </organization>
 
-  <url>http://www.jboss.org/jbossws</url>
+  <url>https://www.jboss.org/jbossws</url>
 
   <!-- Source Control Management -->
   <scm>
@@ -29,7 +29,7 @@
       <id>jboss.org</id>
       <name>JBoss.org Developers</name>
       <organization>JBoss.org</organization>
-      <organizationUrl>http://www.jboss.org</organizationUrl>
+      <organizationUrl>https://www.jboss.org</organizationUrl>
     </developer>
   </developers>
 
@@ -56,14 +56,14 @@
   <!-- IssueManagement -->
   <issueManagement>
     <system>jira</system>
-    <url>http://jira.jboss.org/jira/browse/JBWS</url>
+    <url>https://jira.jboss.org/jira/browse/JBWS</url>
   </issueManagement>
 
   <!-- licenses -->
   <licenses>
     <license>
       <name>GNU Lesser General Public License v2.1 only</name>
-      <url>http://repository.jboss.org/licenses/lgpl-2.1.txt</url>
+      <url>https://repository.jboss.org/licenses/lgpl-2.1.txt</url>
     </license>
   </licenses>
 
