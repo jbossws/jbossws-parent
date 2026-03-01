@@ -7,7 +7,7 @@
   <packaging>pom</packaging>
   <description>Maven parent for JBossWS artifacts</description>
 
-  <version>1.4.5-SNAPSHOT</version>
+  <version>1.4.5.Final</version>
 
   <parent>
     <groupId>org.jboss</groupId>
@@ -28,7 +28,7 @@
     <connection>scm:git:https://github.com/jbossws/jbossws-parent.git</connection>
     <developerConnection>scm:git:https://github.com/jbossws/jbossws-parent.git</developerConnection>
     <url>https://github.com/jbossws/jbossws-parent</url>
-    <tag>${nexus.staging.tag}</tag>
+    <tag>jbossws-parent-1.4.5.Final</tag>
   </scm>
 
   <developers>
