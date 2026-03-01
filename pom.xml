@@ -9,6 +9,13 @@
 
   <version>1.4.5-SNAPSHOT</version>
 
+  <parent>
+    <groupId>org.jboss</groupId>
+    <artifactId>jboss-parent</artifactId>
+    <version>51</version>
+    <relativePath />
+  </parent>
+
   <organization>
     <name>JBoss, by Red Hat</name>
     <url>https://www.jboss.org</url>
@@ -21,7 +28,7 @@
     <connection>scm:git:https://github.com/jbossws/jbossws-parent.git</connection>
     <developerConnection>scm:git:https://github.com/jbossws/jbossws-parent.git</developerConnection>
     <url>https://github.com/jbossws/jbossws-parent</url>
-    <tag>HEAD</tag>
+    <tag>${nexus.staging.tag}</tag>
   </scm>
 
   <developers>
@@ -34,6 +41,10 @@
   </developers>
 
   <properties>
+    <!-- Repository Deployment Settings -->
+    <nexus.repository.staging>jboss-io</nexus.repository.staging>
+    <nexus.repository.release>jbossws</nexus.repository.release>
+    <nexus.staging.tag>jbossws-parent-${project.version}</nexus.staging.tag>
     <!-- all plugins -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- Modularized JDK support (various workarounds) - activated via profile -->
@@ -282,20 +293,6 @@
       </plugin>
     </plugins>
   </reporting>
-
-  <!-- DistributionManagement -->
-  <distributionManagement>
-    <repository>
-      <id>jboss-releases-repository</id>
-      <name>JBoss Releases Repository</name>
-      <url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</url>
-    </repository>
-    <snapshotRepository>
-      <id>jboss-snapshots-repository</id>
-      <name>JBoss Snapshots Repository</name>
-      <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
-    </snapshotRepository>
-  </distributionManagement>
 
   <profiles>
     <profile>
