@@ -129,17 +129,6 @@
         </configuration>
       </plugin>
       <plugin>
-        <artifactId>maven-source-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>attach-sources</id>
-            <goals>
-              <goal>jar-no-fork</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
         <artifactId>maven-jar-plugin</artifactId>
         <configuration>
           <archive>
@@ -147,24 +136,6 @@
               <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
             </manifest>
           </archive>
-        </configuration>
-      </plugin>
-      <plugin>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals>
-              <goal>jar</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <artifactId>maven-release-plugin</artifactId>
-        <configuration>
-          <arguments>-DskipTests</arguments>
-          <autoVersionSubmodules>true</autoVersionSubmodules>
         </configuration>
       </plugin>
       <plugin>
